@@ -57,18 +57,27 @@ nav #list li {
 nav #list .active a {
     color: black;
 }
-
+header .searchbar .search{
+    width: 38px;
+    height: 38px;
+    right: -4px;
+    position: absolute;
+}
 header {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     /* border: 1px solid black;
      */
-    height: 70px;
+    height: 61.2px;
     width: calc(100% - 80px);
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 0px;
     display: flex;
     align-items: center;
+    background:linear-gradient(rgb(151, 151, 151),white);
+    overflow: hidden;
+    z-index: 188888;
+    /* rgb(247, 239, 239) */
 }
 
 header .logo ion-icon {
@@ -123,7 +132,7 @@ header .searchbar #searchbar {
     border: none;
     outline: none;
     border-radius: 20px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
 }
 
 header .searchbar ion-icon {
@@ -143,6 +152,20 @@ header .searchbar ion-icon {
     height: 300px;
     /* border: 1px solid black; */
 }
+.offer .offer-prev-btn #prev{
+    background-color: white;
+    border: none;
+    box-shadow:  1px 5px 0 rgb(0 0 0 / 11%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.offer .offer-next-btn .off-btn{
+    background-color: white;
+    border: none;
+    box-shadow:  1px 5px 0 rgb(0 0 0 / 11%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 
 button {
     border: none;
@@ -160,14 +183,16 @@ button {
 
 .offer-prev-btn {
     position: absolute;
-    top: 265px;
-    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1%;
 }
 
 .offer-next-btn {
     position: absolute;
-    top: 265px;
-    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1%;
 }
 
 .offer-next-btn ion-icon {
@@ -189,6 +214,7 @@ button {
     text-align: center;
     transform: translateX(3%);
     overflow: hidden;
+    
 }
 
 .most-viewed .card-scroll {
@@ -210,8 +236,10 @@ button {
     margin: 10px;
     /* justify-content: center; */
     /* text-align: center; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
     border-radius: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .most-viewed .viewed-card img {
@@ -229,4 +257,31 @@ button {
     right: 0;
     width: 21%;
     background: black;
+}
+.most-viewed .viewed-card button{
+    border: 2px solid black;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    background-color: #f5ded2;
+    position: absolute;
+    bottom: 65px;
+}
+.most-viewed .viewed-card p{
+    width: 200px;
+    height: 93px;
+    overflow: hidden;
+    text-align: left;
+}
+footer{
+    width: calc(100% - 80px);
+    height: 150px;
+    background-color: #282A35;
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+footer div{
+    border: 1px solid white;
 }
