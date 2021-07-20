@@ -59,24 +59,29 @@
             <ion-icon class="search" name="search-circle"></ion-icon>
         </div>
     </header>
+    <section class="categories">
+        <div><img src="1.webp"><p>Appliances</p></div>
+        <div><img src="2.webp"><p>Mobiles</p></div>
+        <div><img src="3.webp"><p>Electronics</p></div>
+        <div><img src="4.webp"><p>Fashion</p></div>
+        <div><img src="5.webp"><p>Grocery</p></div>
+        <div><img src="6.webp"><p>Home</p></div>
+        <div><img src="7.webp"><p>Beauty & toys</p></div>
+    </section>
     <section class="offer">
         <div class="scroll-image">
             <img src="1.jpg" alt="">
-            <img src="2.jpg" alt="">
-            <img src="3.jpg" alt="">
-            <img src="4.jpg" alt="">
+            <img src="eva.jpg" alt="">
+            <!-- <img src="sunny.jpg" alt=""> -->
+            <!-- <img src="sunny2.jpg" alt=""> -->
         </div>
         <button class="offer-prev-btn" onclick="prevOffer()">
-            <ion-icon id="prev" name="caret-back"></ion-icon>
+            <ion-icon class="prev" name="caret-back"></ion-icon>
         </button>
         <button class="offer-next-btn" onclick="nextOffer()">
-            <ion-icon class="off-btn" name="caret-forward"></ion-icon>
+            <ion-icon class="next" name="caret-forward"></ion-icon>
         </button>
     </section>
-    <!-- <button class="offer-prev-btn" onclick="prevOffer()">
-        <ion-icon name="caret-back"></ion-icon>
-    <button class="offer-next-btn" onclick="nextOffer()">
-        <ion-icon name="caret-forward"></ion-icon> -->
     <section class="most-viewed">
         <h2>MOST &nbsp VIEWED</h2>
         <div class="card-scroll">
@@ -84,6 +89,36 @@
                 <img src="https://unsplash.it/200/200" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit beatae earum rem
                     ducimus ipsa distinctio nostrum necessitatibus atque dignissimos.</p>
+                <button>View Product</button>
+            </div>
+            <div class="viewed-card">
+                <img src="https://unsplash.it/200/200" alt="">
+                <p>Anything</p>
+                <button>View Product</button>
+            </div>
+            <div class="viewed-card">
+                <img src="https://unsplash.it/200/200" alt="">
+                <p>Anything</p>
+                <button>View Product</button>
+            </div>
+            <div class="viewed-card">
+                <img src="https://unsplash.it/200/200" alt="">
+                <p>Anything</p>
+                <button>View Product</button>
+            </div>
+            <div class="viewed-card">
+                <img src="https://unsplash.it/200/200" alt="">
+                <p>Anything</p>
+                <button>View Product</button>
+            </div>
+            <div class="viewed-card">
+                <img src="https://unsplash.it/200/200" alt="">
+                <p>Anything</p>
+                <button>View Product</button>
+            </div>
+            <div class="viewed-card">
+                <img src="https://unsplash.it/200/200" alt="">
+                <p>Anything</p>
                 <button>View Product</button>
             </div>
             <div class="viewed-card">
@@ -149,7 +184,53 @@
             </div>
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div>
+            <p class="footer-title">CONTACTUS</p>
+            <p>+91 9879169806</p>
+            <p>homestore@mail.com</p>
+            <p>Find a store</p>
+        </div>
+        <div>
+            <p class="footer-title">BILLING</p>
+            <p>Taxes</p>
+            <p>Payment Methods</p>
+            <p>Shipping Charges</p>
+        </div>
+        <div>
+            <p class="footer-title">CUSTOMER SERVICE</p>
+            <p>Contact Us</p>
+            <p>Ordering & Payment</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>FAQ</p>
+        </div>
+        <div>
+            <p class="footer-title">INFORMATION</p>
+            <p>About Homestore</p>
+            <p>Work With Us</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+            <p>Press Enquiries</p>
+        </div>
+        <div>
+            <p class="footer-title">Subscribe to Flipkart via Email</p>
+            <input type="text" id="subscribe-email" placeholder="Email Address">
+            <button id="subscribe-btn">SUBSCRIBE</button>
+        </div>
+    </footer>
+    <button class="mostviewed-prev-btn" onclick="prevView()">
+        <ion-icon class="prev" name="caret-back"></ion-icon>
+    </button>
+    <button class="mostviewed-next-btn" onclick="nextView()">
+        <ion-icon class="next" name="caret-forward"></ion-icon>
+    </button>
+    <button class="mostrated-prev-btn" onclick="prevRated()">
+        <ion-icon class="prev" name="caret-back"></ion-icon>
+    </button>
+    <button class="mostrated-next-btn" onclick="nextRated()">
+        <ion-icon class="next" name="caret-forward"></ion-icon>
+    </button>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

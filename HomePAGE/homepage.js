@@ -32,6 +32,26 @@ function nextOffer(){
     }
     document.querySelector('.offer .scroll-image').style.marginLeft=`${scroll}%`;
 }
+function prevView(){
+    if(scroll==0)
+    {
+        scroll=-200;
+    }
+    else{
+        scroll+=100;
+    }
+    document.querySelector('.most-viewed .card-scroll').style.marginLeft=`${scroll}%`;
+}
+function nextView(){
+    if(scroll==-200)
+    {
+        scroll=0;
+    }
+    else{
+        scroll-=100;
+    }
+    document.querySelector('.most-viewed .card-scroll').style.marginLeft=`${scroll}%`;
+}
 setInterval(()=>{
     if(scroll==-300)
     {
@@ -41,4 +61,5 @@ setInterval(()=>{
         scroll-=100;
     }
     document.querySelector('.offer .scroll-image').style.marginLeft=`${scroll}%`;
-},10000)
+},10000);
+
