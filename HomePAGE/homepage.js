@@ -1,4 +1,5 @@
 const li=document.querySelectorAll('#list li');
+var mediaqueryipad = window.matchMedia("(max-width: 1024px) and (min-width: 500px)")
 let scroll=0;
 function changeactive(element){
     Array.from(li).forEach(x=>{
@@ -7,10 +8,16 @@ function changeactive(element){
     element.classList.add('active');
 }
 function expandSearchBar(element){
-    element.style.width='100%';
+    element.style.width='90%';
 }
 function minimizeSearchBar(element){
-    element.style.width='200px';
+    if(window.innerWidth>=500&&window.innerWidth<=1024)
+    {
+        element.style.width='150px';
+    }
+    else{
+        element.style.width='200px';
+    }
 }
 function prevOffer(){
     if(scroll==0)
@@ -62,4 +69,5 @@ setInterval(()=>{
     }
     document.querySelector('.offer .scroll-image').style.marginLeft=`${scroll}%`;
 },10000);
+
 
