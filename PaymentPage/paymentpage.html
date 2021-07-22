@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="PaymentPage.css">
+</head>
+
+<body>
+    <header>
+        <h1>Payment</h1>
+        <h2>
+            Choose payment method below
+        </h2>
+    </header>
+    <div class="options">
+        <div class="credit-card">
+            <ion-icon name="card"></ion-icon>
+        </div>
+        <div class="paypal">
+            <img src="PayPal.jpeg" alt="">
+        </div>
+        <div class="amazonpay">
+            <img src="AmazonPay.jpeg" alt="">
+        </div>
+    </div>
+    <div class="details">
+        <div>
+            <h3>BILLING INFO</h3>
+            <form class="billinginfo">
+                <label for="fullname">FULL NAME</label> <br>
+                <input id="fullname"> <br>
+                <label for="address">ADDRESS</label> <br>
+                <input id="address"> <br>
+                <label for="City">CITY</label>
+                <label for="ZIP">ZIP CODE</label> <br>
+                <input id="City">
+                <input id="ZIP" type="tel"> <br>
+                <label for="Country">COUNTRY</label> <br>
+                <input id="Country" type=""> <br>
+                <label for="Contact">CONTACT NUMBER</label> <br>
+                <input id="Contact" type="tel"> <br>
+            </form>
+        </div>
+        <div>
+            <h3>CREDIT CARD INFO</h3>
+            <form class="creditcardinfo">
+                <label for="cardnumber">CARD NUMBER</label><br>
+                <input id="cardnumber" type="tel"><br>
+                <label for="holdername">CARD HOLDER NAME</label><br>
+                <input id="holdername"><br>
+                <label for="Expiry">EXPIRY DATE</label><br>
+                <input id="Expiry" type="date"><br>
+                <label for="cvv">CVV:</label><br>
+                <input id="cvv" type="password"><br>
+                <label for="email">EMAIL ID</label><br>
+                <input id="email" type="email"><br>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
