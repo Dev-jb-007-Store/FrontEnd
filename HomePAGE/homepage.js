@@ -25,7 +25,7 @@ function prevOffer() {
     else {
         scroll += 100;
     }
-    document.querySelector('.offer .scroll-image').style.marginLeft = `${scroll}%`;
+    document.querySelector('.web-offer .scroll-image').style.marginLeft = `${scroll}%`;
 }
 function nextOffer() {
     if (scroll == -300) {
@@ -34,7 +34,7 @@ function nextOffer() {
     else {
         scroll -= 100;
     }
-    document.querySelector('.offer .scroll-image').style.marginLeft = `${scroll}%`;
+    document.querySelector('.web-offer .scroll-image').style.marginLeft = `${scroll}%`;
 }
 function prevView() {
     if (scroll == 0) {
@@ -43,7 +43,7 @@ function prevView() {
     else {
         scroll += 100;
     }
-    document.querySelector('.most-viewed .card-scroll').style.marginLeft = `${scroll}%`;
+    document.querySelector('.web-most-viewed .card-scroll').style.marginLeft = `${scroll}%`;
 }
 function nextView() {
     if (scroll == -200) {
@@ -52,7 +52,25 @@ function nextView() {
     else {
         scroll -= 100;
     }
-    document.querySelector('.most-viewed .card-scroll').style.marginLeft = `${scroll}%`;
+    document.querySelector('.web-most-viewed .card-scroll').style.marginLeft = `${scroll}%`;
+}
+function prevRated() {
+    if (scroll == 0) {
+        scroll = -200;
+    }
+    else {
+        scroll += 100;
+    }
+    document.querySelector('.web-most-viewed .card-scroll').style.marginLeft = `${scroll}%`;
+}
+function nextRated() {
+    if (scroll == -200) {
+        scroll = 0;
+    }
+    else {
+        scroll -= 100;
+    }
+    document.querySelector('.web-most-viewed .card-scroll').style.marginLeft = `${scroll}%`;
 }
 setInterval(() => {
     if (scroll == -300) {
@@ -61,7 +79,7 @@ setInterval(() => {
     else {
         scroll -= 100;
     }
-    document.querySelector('.offer .scroll-image').style.marginLeft = `${scroll}%`;
+    document.querySelector('.web-offer .scroll-image').style.marginLeft = `${scroll}%`;
 }, 10000);
 function showmobilenav() {
     let hamburger = document.querySelector('#mobile-header #nav-hamburger #hamburger');
