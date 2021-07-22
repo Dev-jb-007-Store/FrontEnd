@@ -82,9 +82,6 @@ header h2{
     background-color: transparent;
     margin: 10px;
 }
-.details .billinginfo input:city{
-    width: 10%;
-}
 .details .creditcardinfo{
     width: 300px;
     /* border: 2px solid black; */
