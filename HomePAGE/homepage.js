@@ -66,15 +66,14 @@ setInterval(() => {
 function showmobilenav() {
     let hamburger = document.querySelector('#mobile-header #nav-hamburger #hamburger');
     let nav = document.querySelector('.mobile-navbar');
-    if (nav.style.width == '100%') {
+    if (nav.style.width == '75%') {
         hamburger.style.backgroundColor = 'black';
         document.styleSheets[0].addRule('#mobile-header #nav-hamburger #hamburger::after', 'transform:translateY(0px) rotate(0deg)')
         document.styleSheets[0].addRule('#mobile-header #nav-hamburger #hamburger::before', 'transform:translateY(0px) rotate(0deg)');
-        nav.style.width = '100%';
         return nav.style.width = '0%'
     }
     hamburger.style.backgroundColor = 'transparent';
     document.styleSheets[0].addRule('#mobile-header #nav-hamburger #hamburger::after', 'transform:translateY(+8px) rotate(45deg)');
     document.styleSheets[0].addRule('#mobile-header #nav-hamburger #hamburger::before', 'transform:translateY(-8px) rotate(-45deg)');
-    nav.style.width = '100%';
+    nav.style.width = '75%';
 }
