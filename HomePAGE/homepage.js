@@ -1,6 +1,7 @@
 const li = document.querySelectorAll('#list li');
 var mediaqueryipad = window.matchMedia("(max-width: 1024px) and (min-width: 500px)")
 let scroll = 0;
+
 function changeactive(element) {
     Array.from(li).forEach(x => {
         x.classList.remove('active');
@@ -9,12 +10,21 @@ function changeactive(element) {
 }
 function expandSearchBar(element) {
     element.style.width = '90%';
+    element.style.borderBottomLeftRadius='0px';
+    setTimeout(()=>{
+        const searchDrop=document.querySelector('.searchbar-dropdown');
+        searchDrop.style.opacity=1;
+    },300);
 }
 function minimizeSearchBar(element) {
     if (window.innerWidth >= 500 && window.innerWidth <= 1024) {
         element.style.width = '150px';
+        element.style.borderBottomLeftRadius='20px';
     }
     else {
+        element.style.borderBottomLeftRadius='20px';
+        const searchDrop=document.querySelector('.searchbar-dropdown');
+        searchDrop.style.opacity=0;
         element.style.width = '200px';
     }
 }
