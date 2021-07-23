@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#web-nav {
+    width: 4.7%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+#web-nav #list {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#web-nav #list a {
+    text-decoration: none;
+    color: white;
+}
+
+#web-nav #list a ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+#web-nav .active {
+    background-color: white;
+}
+
+#web-nav #list li {
+    position: relative;
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#web-nav #list .active a {
+    color: black;
+}
+
+#web-header .searchbar .search {
+    width: 38px;
+    height: 38px;
+    right: -4px;
+    position: absolute;
+}
+
+#web-header {
+    /* margin-top: 20px; */
+    /* border: 1px solid black;
+     */
+    height: 61.2px;
+    width: calc(100% - 4.7%);
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgb(151, 151, 151), white);
+    overflow: hidden;
+    z-index: 188888;
+    /* rgb(247, 239, 239) */
+}
+.searchbar-dropdown{
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 25.78%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.2s;
+    background-color: white;
+    height: max-content;
+    position: fixed;
+    top:46px;
+    /* border: 1px solid black; */
+    right: 1%;
+    z-index: 100000000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.searchbar-dropdown div{
+    overflow-x: hidden;
+    cursor: pointer;
+    width: 100%;
+    height:60px;
+    /* border-bottom:1px solid black; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.searchbar-dropdown div svg{
+    fill:grey;
+    margin-left:10px;
+}
+.searchbar-dropdown div ion-icon{
+    width: 20px;
+    height: 20px;
+    color:grey;
+    margin-left:10px;
+}
+.searchbar-dropdown div:hover{
+    background-color: #dfeafd;
+}
+.searchbar-dropdown div p{
+    padding: 5px 10px;
+    font-size:1rem;
+    width: calc(100% - 30px);
+    height: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+#web-header .logo ion-icon {
+    width: 100%;
+    height: 100%;
+}
+
+#web-header .logo {
+    width: calc(100% / 16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#web-header .name {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(1000% / 16);
+    height: 100%;
+}
+
+#web-header .name p {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 4rem;
+    letter-spacing: 30px;
+    margin-left: 90px;
+    transition: 1s;
+}
+
+#web-header .searchbar {
+    /* overflow: hidden; */
+    transition: 0.6s;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: calc(500% / 16);
+    height: 100%;
+}
+
+#web-header .searchbar #searchbar {
+    width: 200px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1rem;
+    transition: 0.6s;
+    height: 30px;
+    /* background-color: gray; */
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px; */
+}
+
+#web-header .searchbar ion-icon {
+    width: 50px;
+    height: 50px;
+    right: 0px;
+    position: absolute;
+}
+/* .web-footer{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+} */
+.filter-outer-div{
+    transform: translateX(4.9%);
+width: calc(100% - 4.7%);
+height: 24px;
+/* height: 200px; */
+border: 1px solid black;
+overflow: hidden;
+margin-top: 80.2px;
+transition: 0.5s;
+}
+.filter-outer-div .filter{
+    width: 100%;
+    height: 200px;
+}
+.filter-outer-div .filter p{
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+.filter-outer-div .filter p:hover{
+    cursor: pointer;
+}
+.filter-outer-div .filter p svg{
+    margin-right: 4px;
+}
+.filter-outer-div .filter-opt{
+    display: grid;
+    height: 176px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.filter-outer-div .filter .filter-opt .filt-categories{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.filter-outer-div .filter .filter-opt .filt-categories .radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.search-results{
+    transform: translateX(4.9%);
+width: calc(100% - 4.7%);
+    height: max-content;
+    margin: 20px 0px 20px 0px;
+}
+.search-results .search-content{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+}
+.search-results .search-content .pro-img{
+    flex: 1;
+    /* border: 2px solid red; */
+}
+.search-results .search-content .pro-info{
+    flex: 4;
+    /* border: 2px solid darkblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.search-results .search-content .pro-img img{
+    height: 80%;
+    width: 80%;
+    aspect-ratio: 9/16;
+    /* margin-left: 21.5%; */
+}
