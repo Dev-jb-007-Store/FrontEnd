@@ -91,6 +91,7 @@ h3 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 25.78%;
+    pointer-events: none;
     display: flex;
     align-items: center;
     flex-direction: column;

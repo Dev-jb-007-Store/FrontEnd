@@ -42,7 +42,7 @@
     background-color: greenyellow;
     height: 70%;
     width: 80%;
-    border-radius: 10px;
+    border-radius: 0.7em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,10 +117,131 @@
     background-color: lightgrey;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(12, 1fr);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .product_full_info .all_info .all_info_content .full_content{
     border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customer_review{
+    width: calc(100% - 4.7%);
+    transform: translateX(4.9%);
+    border-top: 1px solid black;  
+}
+.customer_review .overall_review{
+    /* height: 300px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.customer_review .overall_review .overall_review_header{
+    display: flex;
+}
+.customer_review .overall_review .overall_review_header .with_h1{
+    width: 80%;
+    /* border: 1px solid firebrick; */
+}
+.customer_review .overall_review .overall_review_header .with_h1 h1{
+    font-weight: 400;
+    margin: 25px;
+}
+.customer_review .overall_review .overall_review_header .with_btn{
+    width: 20%;
+    /* border: 1px solid darkgoldenrod; */
+    text-align: center;
+    margin: 20px;
+}
+button{
+    background-color: darkgray;
+    padding: 5px;
+    border-radius: 0.4em;
+    margin-top: 5px;
+}
+.customer_review .overall_review .overall_review_content{
+    display: flex;
+    /* height: 500px; */
+    padding-bottom: 30px;
+}
+.customer_review .overall_review .overall_review_content .big_rating{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid violet; */
+}
+.customer_review .overall_review .overall_review_content .rating_stats{
+    width: 50%;
+    /* border: 1px solid saddlebrown; */
+    display: flex;
+    justify-content: center;
+}
+.customer_review .overall_review .overall_review_content .big_rating .numbers{
+    display: flex;
+    align-items: center;
+    font-size: 3em;
+}
+.customer_review .overall_review .overall_review_content .big_rating .numbers .rated{
+    margin: 5px 5px 5px 30px;
+}
+.customer_review .overall_review .overall_review_content .big_rating .text{
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box{
+    border: 1px solid black;
+    width: 75%;
+    display: flex;
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box ul{
+    list-style: none;
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_number{
+    width: 15%;
+    text-align: center;
+}
+/* .customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_number .stat_holder .star ion-icon{
+    size: 0.5em;
+} */
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_user{
+    width: 15%;
+    text-align: center;
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_user li{
+    margin-top: 2px;
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_bar{
+    width: 70%;
+    /* line-height: 1px; */
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_bar .down_bar{
+    width: 100%;
+    height: 6px;
+    background-color: lightgrey;
+    border-radius: 50px;
+    margin: 12px 0px;
+}
+.customer_review .overall_review .overall_review_content .rating_stats .stats_box .stat_bar .upp_bar{
+    width: 50%;
+    height: 6px;
+    background-color: green;
+    border-radius: 50px;
+    margin: 12px 0px;
+}
+.customer_review .all_reviews .full_review{
+    margin-left: 30px;
+    /* height: 120px; */
+    width: 95.5%;
+    padding: 20px;
+    border: 1px solid black;
+}
+.customer_review .all_reviews .full_review .product_stars .product_main_star{
+    background-color: greenyellow;
+    height: 70%;
+    width: 4%;
+    border-radius: 0.7em;
     display: flex;
     align-items: center;
     justify-content: center;

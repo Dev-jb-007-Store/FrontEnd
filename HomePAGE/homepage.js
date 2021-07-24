@@ -12,8 +12,9 @@ function expandSearchBar(element) {
     element.style.width = '90%';
     element.style.borderBottomLeftRadius='0px';
     setTimeout(()=>{
-        const searchDrop=document.querySelector('.searchbar-dropdown');
+        let searchDrop=document.querySelector('.searchbar-dropdown');
         searchDrop.style.opacity=1;
+        searchDrop.style.pointerEvents='auto';
     },300);
 }
 function minimizeSearchBar(element) {
@@ -22,11 +23,13 @@ function minimizeSearchBar(element) {
         element.style.width = '150px';
         element.style.borderBottomLeftRadius='20px';
         searchDrop.style.opacity=0;
+        searchDrop.style.pointerEvents='none';
     }
     else {
         element.style.borderBottomLeftRadius='20px';
         searchDrop.style.opacity=0;
         element.style.width = '200px';
+        searchDrop.style.pointerEvents='none';
     }
 }
 function prevOffer() {
