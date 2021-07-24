@@ -17,13 +17,14 @@ function expandSearchBar(element) {
     },300);
 }
 function minimizeSearchBar(element) {
+    let searchDrop=document.querySelector('.searchbar-dropdown');
     if (window.innerWidth >= 500 && window.innerWidth <= 1024) {
         element.style.width = '150px';
         element.style.borderBottomLeftRadius='20px';
+        searchDrop.style.opacity=0;
     }
     else {
         element.style.borderBottomLeftRadius='20px';
-        const searchDrop=document.querySelector('.searchbar-dropdown');
         searchDrop.style.opacity=0;
         element.style.width = '200px';
     }
