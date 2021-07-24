@@ -1,0 +1,127 @@
+.product_description{
+    height: 500px;
+    margin:80px 0px 20px 0px;
+    width: calc(100% - 4.7%);
+    transform: translateX(4.9%);
+    border: 1px solid black;
+    display: flex;
+}
+.product_description .left_description{
+    width: 40%;
+    height: 100%;
+    border: 1px solid pink;
+}
+.product_description .right_description{
+    width: 60%;
+    height: 100%;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+.product_description .right_description .product_title{
+    margin: 20px;
+}
+.product_description .right_description .product_title h2{
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.product_ratings{
+    /* height: 50px; */
+    width: 50%;
+    border: 1px solid black;
+    margin: 10px 20px;
+    display: flex;
+}
+.product_ratings .product_stars{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_ratings .product_stars .product_main_star{
+    background-color: greenyellow;
+    height: 70%;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_ratings .product_stars .product_main_star .product_exact_rating{
+    margin-right: 5px;
+    margin-bottom: 2px;
+    /* font-size: 0.3em; */
+}
+/* .product_ratings .product_stars .product_main_star p ion-icon{
+    size: 0.3em;
+} */
+.product_ratings .product_star_text{
+    width: 80%;
+    border: 1px solid brown;
+    
+}
+.product_ratings .product_star_text h2{
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin: 10px 5px;
+    font-size: 1em;
+}
+.product_price{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 10px 30px;
+}
+.product_offers{
+    margin: 20px 0px;
+}
+.product_offers h3{
+    font-weight: 300;
+}
+.product_offers .available_offers{
+    border: 1px solid black;
+    height: 150px;
+    overflow-y: scroll;
+}
+/* .product_offers .available_offers .available_offers_scroll{
+    display: flex;
+    flex-direction: column;
+
+} */
+.product_offers .available_offers .available_offers_scroll .bank_offers{
+    margin: 10px;
+}
+.product_full_info{
+    width: calc(100% - 4.7%);
+    transform: translateX(4.9%);
+    /* border: 1px solid black;   */
+}
+.product_full_info p{
+    margin: 20px 0px 20px 30px;
+}
+.product_full_info h2{
+    font-weight: 500;
+    margin-left: 30px;
+}
+.product_full_info .all_info{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    margin: 30px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.product_full_info .all_info .all_info_content{
+    display: grid;
+    height: 100%;
+    width: 30%;
+    background-color: lightgrey;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    border: 1px solid black;
+}
+.product_full_info .all_info .all_info_content .full_content{
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
