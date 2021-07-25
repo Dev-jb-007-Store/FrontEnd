@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+#web-header{
+    border-bottom: 2px solid black;
+}
+.upper-part{
+    height: 300px;
+    width: 80%;
+    transform: translateX(24%);
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-template-rows: 1fr;
+    /* border: 1px solid black; */
+}    
+.upper-part .profile-photo{
+    /* border: 1px solid blue; */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upper-part .profile-photo img{
+    height: 240px;
+    width: 55%;
+    border-radius: 30%;
+    padding-bottom: 10px;
+}
+.upper-part .profile-photo .change-profilepic{
+    width: auto;
+    height: auto;
+}
+.upper-part .profile-photo .change-profilepic button{
+    padding: 5px;
+    background-color: #f6f6f6;
+    font-family: 'Nunito', sans-serif;
+}
+.upper-part .submit button{
+    width: auto;
+    padding: 5px;
+    background-color:#8080802b;
+    font-family: 'Nunitos', sans-serif;
+    /* border: 1px solid red; */
+}
+.lower-part{
+    margin-top: 30px;
+    height: 40rem;
+    width: calc(100% - 4.7%);
+    transform: translateX(4.9%);
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+.lower-part label{
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+.lower-part input{
+    width: 20%;
+    padding: 8px;
+    background-color: #8080802b;
+    font-family: 'Nunito', sans-serif;
+}
