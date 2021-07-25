@@ -1,0 +1,175 @@
+#web-sigin-header{
+    width: 100%;
+    height: fit-content;
+}
+#web-sigin-header h1{
+    width: fit-content;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin: 10px auto;
+    height: fit-content;
+    position: relative;
+}
+#web-sigin-header h1::after{
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 2px;
+    background-color: black;
+    bottom:-10px;
+    left:-100%;
+}
+#signin-block{
+    width: 60%;
+    height: 500px;
+    border: 1px solid black;
+    margin:100px auto;
+    display: flex;
+    align-items: center;
+}
+#signin-block #info{
+    flex:1;
+    height: 100%;
+    border-right: 1px solid red;
+    background-color:#D5EDFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    
+}
+#signin-block #info h3{
+    margin-left: 10px;
+}
+#signin-block #info p{
+    letter-spacing: 1.5px;
+    margin-left: 10px;
+    margin-top: 50px;
+    line-height: 150%;
+}
+#signin-block #input-info{
+    flex:2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signin-block #input-info .input-info-title{
+    flex:1;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+#signin-block #input-info .input-info-title h3{
+    width: fit-content;
+    height: fit-content;
+    margin:13px 20px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#signin-block #input-info .input-info-form{
+    flex:10;
+    width: 100%;
+}
+#signin-block #input-info .input-info-form .input-info-form-username{
+    padding: 1px 5%;
+    width: 100%;
+    height:30%;
+}
+#signin-block #input-info .input-info-form .input-info-form-password{
+    padding: 1px 5%;
+    width: 100%;
+    height:30%;
+}
+#signin-block #input-info .input-info-form .input-info-form-firstname input{
+    width: 90%;
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color:  #EBEBEB ;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-firstname h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom:5px;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-lastname input{
+    width: 90%;
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color:  #EBEBEB ;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-lastname h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom:5px;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-phonenumber input{
+    width: 90%;
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color:  #EBEBEB ;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-phonenumber h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom:5px;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-ship input{
+    width: 90%;
+    padding: 2px 10px;
+    outline: none;
+    border: none;
+    height: 30px;
+    background-color:  #EBEBEB ;
+    margin-left: 10px;
+}
+#signin-block #input-info .input-info-form .input-info-form-ship h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom:5px;
+    margin-left: 10px;
+}
+
+
+#signin-block #input-info .input-info-form .input-info-form-button{
+    width:100%;
+    height: 40%;
+    /* border: 1px solid red; */
+    padding: 25px 5%;
+}
+#signin-block #input-info .input-info-form .input-info-form-button p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    /* letter-spacing: 3px; */
+    margin-bottom:5px;
+    font-size: 0.8rem;
+    height: 50%;
+}
+#signin-block #input-info .input-info-form .input-info-form-button .btn{
+    height: 50%;
+    padding: auto;
+    
+}
+#signin-block #input-info .input-info-form .input-info-form-button .btn .dfruv{
+    background-color: peachpuff;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 35px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
