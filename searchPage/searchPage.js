@@ -1,38 +1,9 @@
-const li = document.querySelectorAll('#list li');
-
-function changeactive(element) {
-    Array.from(li).forEach(x => {
-        x.classList.remove('active');
-    });
-    element.classList.add('active');
-}
-function expandSearchBar(element) {
-    element.style.width = '90%';
-    element.style.borderBottomLeftRadius='0px';
-    setTimeout(()=>{
-        const searchDrop=document.querySelector('.searchbar-dropdown');
-        searchDrop.style.opacity=1;
-    },300);
-}
-function minimizeSearchBar(element) {
-    let searchDrop=document.querySelector('.searchbar-dropdown');
-    if (window.innerWidth >= 500 && window.innerWidth <= 1024) {
-        element.style.width = '150px';
-        element.style.borderBottomLeftRadius='20px';
-        searchDrop.style.opacity=0;
-    }
-    else {
-        element.style.borderBottomLeftRadius='20px';
-        searchDrop.style.opacity=0;
-        element.style.width = '200px';
-    }
-}
 function openFilter(){
     const filter = document.querySelector('.filter-outer-div');
-    if(filter.style.height == "210px"){
+    if(filter.style.height >= "35px"){
         return filter.style.height = '34px';
     }
-    filter.style.height = '210px';
+    filter.style.height = 'max-content';
 }
 let topButton=document.querySelector('.top-button');
 const gototopobserver5=new IntersectionObserver((entries,gototopobserver5)=>{
